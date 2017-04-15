@@ -1,0 +1,10 @@
+<div ng-show = "main.loggedIn" class="user-container">
+	<h2>Users</h2>
+	<div ng-repeat="user in users">
+	  <a class="cs142-main-usernames" href="#users/{{user._id}}"> {{user.first_name}} {{user.last_name}}</a>
+	</div>
+	<h2>Last Activity</h2>
+	<div ng-if="activity">
+	<div>{{activity.first_name}} {{activity.last_name}} {{activity.type}} <br> {{activity.date_time}}</div>
+	<img class="thumbnail" ng-if="activity.file_name" ng-src="images/{{activity.file_name}}"> </img></div>
+</div>

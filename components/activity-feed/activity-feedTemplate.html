@@ -1,0 +1,7 @@
+
+<h2>Activity Feed</h2>
+<!--<button class="refresh" ng-click="">Refresh</button>-->
+<div class="activity" ng-repeat="activity in activities">
+	<img class="thumbnail" ng-if="activity.file_name" ng-src="images/{{activity.file_name}}"> </img>
+ 	{{activity.first_name}} {{activity.last_name}} {{activity.type}} <br> {{activity.date_time}}
+</div>

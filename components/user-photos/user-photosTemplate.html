@@ -1,0 +1,22 @@
+<div class="photo-container">	
+	<div class="image-item" ng-repeat="photo in photos">
+		<a class="cs142-main-usernames" href="#users/{{user._id}}">{{user.first_name}} {{user.last_name}}</a>
+		<div class="text">Published {{photo.date_time}}<div> <br>
+		<div>Likes: {{photo.likes}}</div>
+		<img class="photo" ng-src="images/{{photo.file_name}}"> </img> <br>
+		<div class="text" ng-repeat="comment in photo.comments">
+			<a class="cs142-main-usernames" href="#users/{{comment.user._id}}">{{comment.user.first_name}} {{comment.user.last_name}}</a> {{comment.date_time}}: {{comment.comment}}
+		</div>
+
+		<md-input-container>
+			<label>Write a comment...</label>
+			<input ng-model="photo.comment">
+		</md-input-container>
+		<button ng-click="addComment(photo._id, photo.comment)">Add Comment</button>
+		<button ng-disabled="photo.favorited" ng-click="favoritePhoto(photo)">Favorite</button>
+		<button ng-if="!photo.liked" ng-click="likeComment(photo)">Like</button>
+		<button ng-if="photo.liked" ng-click="unlikeComment(photo)">Unlike</button>
+		<!--<button ng-click="delete(photo)">Delete</button>-->
+		<!--ng-disabled="isDisabled"-->
+	</div>
+</div>

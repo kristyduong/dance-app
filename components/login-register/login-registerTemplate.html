@@ -1,0 +1,114 @@
+<form name="userForm" class="login">
+
+	<div ng-if="!buttonWasClicked">
+		<md-input-container>
+			<label>Username</label>
+			<input name="login_name" ng-model="userInfo.login_name" required>
+			<div ng-messages="userForm.login_name.$error">
+				<div ng-message="required">This is required!</div>
+				<!--<div ng-message="actual">This is not a registered user.</div>-->
+				<!--<div ng-message="md-maxlength">That's too long!</div>-->
+			 	<!--<div ng-message="minlength">That's too short!</div>-->
+			 	<!--<div ng-message="md-require-match">Username does not exist!</div>-->
+	 		</div>
+	 	</md-input-container> <br>
+
+	 	<md-input-container>
+			<label>Password</label>
+			<input name="password" ng-model="userInfo.password" type="password" required>
+			<div ng-messages="userForm.password.$error">
+				<div ng-message="required">This is required!</div>
+				<!--<div ng-message="realOne">This password is invalid.</div>-->
+				<!--<div ng-message="md-maxlength">That's too long!</div>-->
+			 	<!--<div ng-message="minlength">That's too short!</div>-->
+	 		</div>
+	 	</md-input-container> <br>
+ 	</div>
+
+ 	<div ng-if="buttonWasClicked">
+
+ 		<md-input-container>
+		<label>Username</label>
+		<input name="login_name" ng-model="userInfo.login_name" required>
+		<div ng-messages="userForm.username.$error">
+			<div ng-message="required">This is required!</div>
+			<!--<div ng-message="taken">This username is taken.</div>-->
+			<!--<div ng-message="md-maxlength">That's too long!</div>-->
+		 	<!--<div ng-message="minlength">That's too short!</div>-->
+		 	<!--<div ng-message="md-require-match">Username does not exist!</div>-->
+ 		</div>
+	 	</md-input-container> <br>
+
+	 	<md-input-container>
+			<label>Password</label>
+			<input name="password" ng-model="userInfo.password" type="password" required md-maxlength="20" minlength="4">
+			<div ng-messages="userForm.password.$error">
+				<div ng-message="required">This is required!</div>
+				<!--<div ng-message="realOne">This password is invalid.</div>-->
+				<div ng-message="md-maxlength">That's too long!</div>
+			 	<div ng-message="minlength">That's too short!</div>
+	 		</div>
+	 	</md-input-container> <br>
+
+		<md-input-container>
+			<label>Verify Password</label>
+			<input name="verify" ng-model="userInfo.verify" type="password" required>
+			<div ng-messages="userForm.verify.$error">
+				<div ng-message="required">This is required!</div>
+				<!--<div ng-message="match">Your password fields do not match.</div>-->
+				<!--<div ng-message="md-maxlength">That's too long!</div>-->
+			 	<!--<div ng-message="minlength">That's too short!</div>-->
+			 	<!--<div ng-message="md-require-match">Username does not exist!</div>-->
+	 		</div>
+	 	</md-input-container> <br>
+
+	 	<md-input-container> 
+	 		<label>First Name</label>
+	 		<input name="firstName" ng-model="userInfo.first_name" required>
+	 		<div ng-messages="userForm.firstName.$error">
+				<div ng-message="required">This is required!</div>
+	 		</div>
+	 	</md-input-container>
+
+	 	<md-input-container> 
+	 		<label>Last Name</label>
+	 		<input name="lastName" ng-model="userInfo.last_name" required>
+	 		<div ng-messages="userForm.lastName.$error">
+				<div ng-message="required">This is required!</div>
+	 		</div>
+	 	</md-input-container> <br>
+
+	 	<md-input-container> 
+	 		<label>Location</label>
+	 		<input name="location" ng-model="userInfo.location">
+	 		<div ng-messages="userForm.location.$error">
+				
+	 		</div>
+	 	</md-input-container>
+
+	 	<md-input-container> 
+	 		<label>Occupation</label>
+	 		<input name="occupation" ng-model="userInfo.occupation">
+	 		<div ng-messages="userForm.occupation.$error">
+				
+	 		</div>
+	 	</md-input-container> <br>
+
+	 	<md-input-container> 
+	 		<label>Description</label>
+	 		<input name="description" ng-model="userInfo.description">
+	 		<div ng-messages="userForm.description.$error">
+				
+	 		</div>
+	 	</md-input-container> <br>
+
+	</div>
+
+	<button ng-if="!buttonWasClicked" ng-click="submitForm('submit')">Submit</button>
+	<button ng-if="buttonWasClicked" ng-click="registerUser()">Complete Registration</button>
+	{{main.displayMessage}}
+ 	<!--<input type='submit' value='Submit'>-->
+</form>
+
+<button ng-if="!buttonWasClicked" ng-click="buttonClick('register')" class="register-button">Register Me</button>
+<button ng-if="buttonWasClicked" ng-click="buttonClick('login')" class="register-button">Back to Login</button>

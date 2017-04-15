@@ -1,0 +1,14 @@
+<h2>Favorites</h2>
+<!--<div ng-repeat="user in users">
+  <a class="cs142-main-usernames" href="#users/{{user._id}}"> {{user.first_name}} {{user.last_name}}</a>
+</div>-->
+<div class="favorite-container">	
+	<div class="favorite-item" ng-repeat="favorite in favorites">
+		<!--<a class="cs142-main-usernames" href="#users/{{user._id}}">{{user.first_name}} {{user.last_name}}</a>-->
+		<!--<div class="text">Published {{favorite.date_time}}<div> <br>-->
+		<!--<button class="delete-button" ng-click="delete(favorite)">X</button>-->
+		<img ng-click="showPhoto($event, favorite)" class="favorite-photo-thumbnail" ng-src="images/{{favorite}}"> </img> <br>
+		<button class="delete-button" ng-click="delete(favorite)">Delete</button>
+
+	</div>
+</div>

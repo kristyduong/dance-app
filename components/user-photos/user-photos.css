@@ -1,0 +1,30 @@
+.photo {
+	width: 200px;
+	border: solid gray 1px;
+	border-radius: 8px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.photo-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.image-item {
+	margin: 10px;
+	width: 200px;
+	padding: 10px;
+	border: solid gray 1px;
+	border-radius: 8px;
+}
+
+.text {
+	font-size: 12px;
+}
+
+button {
+	margin: 0px;
+}

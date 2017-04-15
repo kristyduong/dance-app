@@ -1,0 +1,24 @@
+h2 {
+	margin: 10px;
+}
+
+.refresh {
+	margin: 10px;
+}
+
+.activity {
+	display: flex;
+	margin: 10px;
+	border: solid black 1px;
+	border-radius: 8px;
+	width:50%;
+	padding: 10px;
+}
+
+.thumbnail {
+	height: 50px;
+	border: solid gray 1px;
+	border-radius: 8px;
+	margin-right: 10px;
+	border-radius: 8px;
+}

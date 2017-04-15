@@ -1,0 +1,12 @@
+.profile {
+	text-align: center;
+}
+
+.photo-link {
+	text-decoration: none;
+	color: gray;
+}
+
+.photo-link:hover {
+	color: blue;
+}
