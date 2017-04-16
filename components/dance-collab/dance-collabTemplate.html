@@ -1,2 +1,43 @@
 
 <h2>Let's Dance</h2>
+<div ng-mousedown="style='blue'">HEY</div>
+<div ng-mousedown="myStyle={'background-color':'red'}" ng-style="myStyle">HEY</div>
+<div ng-mousedown="myStyle={'background-color':'red'}" ng-style="myStyle">HEY</div>
+<div class="screen"></div>
+<table cellpadding="0" cellspacing="0" ng-class="{selected : ng-clicked === true}" id="our_table" ng-model="main.slider" ng-mousedown="main.selectCells()">
+  <tr>
+  	<td></td><td></td><td></td><td></td><td></td>
+  	<td></td><td></td><td></td><td></td><td></td>
+  	<td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+    <td></td><td></td><td></td><td></td><td></td>
+      </tr>
+</table>
+
+<div ng-mousedown="main.startDrag($event)" class="slider" ng-mouseup="main.endDrag($event)"></div>
+
+

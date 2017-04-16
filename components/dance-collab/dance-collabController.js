@@ -22,12 +22,22 @@ cs142App.controller('DanceCollabController', ['$scope', '$rootScope','$resource'
                 $scope.activities = activityList;
             });
         });
-        /*$rootScope.$on('updateUsers', function () {
-            UserList.get({}, function(userList) {
-                //console.log('userList', userList);
-                $scope.users = userList;
-            });
-        });*/
+
+        $scope.main.cellClass = "unselected"
+        $scope.main.selectCells = function(){
+            console.log("ok");
+            $scope.main.cellClass = "selected"
+        }
+
+        $scope.main.startDrag = function(event){
+            console.log("x", event.x);
+            console.log("y", event.y);
+        }
+
+        $scope.main.endDrag = function(event){
+            console.log("end x", event.pageX);
+            console.log("end y", event.pageY);
+        }
 
 }]);
 
