@@ -32,10 +32,9 @@ table {
 }
 
 .slider{
-
   margin-left: 50px;
   margin-bottom: 30px;
-  width: 500px;
+  width: 700px;
   height: 30px;
   text-align: center;
   vertical-align: middle;
@@ -65,13 +64,7 @@ table {
   vertical-align: middle;
   background-color: #DD3030;
 }
-.box_green {
-	height: 30px;
-	width: 150px;
-  text-align: center;
-  vertical-align: middle;
-  background-color: green;
-}
+
 .screen{
 	/*width: 700px;
 	height: 400px;
