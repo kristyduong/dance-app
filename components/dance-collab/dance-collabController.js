@@ -60,7 +60,7 @@ $scope.$on('$viewContentLoaded', function() {
 
           var canvasCtx = canvas.getContext('2d');
 
-        var WIDTH = 700;
+        var WIDTH = 500;
         var HEIGHT = 100;
         analyser.fftSize = 2048;
         var bufferLength = analyser.frequencyBinCount;
