@@ -47,13 +47,13 @@
         <md-toolbar layout="row">
             <div ng-show="main.loggedIn" class="cs142-main-name">Hello {{main.currUser.first_name}} {{main.currUser.last_name}}!</div>
             <span flex></span>
-                <!--<label>Add Photo(s)</label>-->
+               
             <md-button ng-show="main.loggedIn" ng-click="uploadPhoto()">Add Photo(s)</md-button>
             <input ng-show="main.loggedIn" type="file" class="cs142-main-name" accept="image/*" onchange="angular.element(this).scope().inputFileNameChanged(this)">
             <span flex></span>
             <div class="cs142-main-name">{{main.title}}</div>
             <span flex></span>
-            <!--<div><md-checkbox class="box-property">Enable Advanced Features</div>-->
+            
             <md-button href="#dance">Dance</md-button>
             <md-button ng-show="main.loggedIn" href="#activities">Activities</md-button>
             <md-button ng-show="main.loggedIn" href="#favorites">Favorites</md-button>

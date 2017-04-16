@@ -3,7 +3,7 @@
 cs142App.controller('DanceCollabController', ['$scope', '$rootScope','$resource',
     function ($scope, $rootScope, $resource) {
 
-        $scope.main.title = 'Dance';
+        $scope.main.title = '';
 
         $scope.main.cellClass = "unselected"
         $scope.main.selectCells = function(){
