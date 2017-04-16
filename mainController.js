@@ -49,8 +49,8 @@ cs142App.controller('MainController', ['$scope', '$rootScope', '$location', '$ht
         $rootScope.$on( "$routeChangeStart", function(event, next, current) {
           if (!$scope.main.loggedIn) {
              // no logged user, redirect to /login-register unless already there
-            if (next.templateUrl !== "components/login-register/login-registerTemplate.html") {
-                $location.path("/login-register");
+            if (next.templateUrl !== "components/dance-collab/dance-collabTemplate.html") {
+                $location.path("/dance");
             }
           }
         });
