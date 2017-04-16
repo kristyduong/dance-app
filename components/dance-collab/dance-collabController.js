@@ -3,26 +3,7 @@
 cs142App.controller('DanceCollabController', ['$scope', '$rootScope','$resource',
     function ($scope, $rootScope, $resource) {
 
-<<<<<<< HEAD
-        $scope.main.title = 'Activities';
-
-        var ActivityList = $resource('/activities', {}, {
-            get: {method: 'get', isArray: true}
-        });
-
-        ActivityList.get({}, function(activityList) {
-            console.log(activityList);
-            //console.log('userList', userList);
-            $scope.activities = activityList;
-        });
-
-        $rootScope.$on('updateActivity', function () {
-            ActivityList.get({}, function(activityList) {
-                console.log(activityList);
-                //console.log('userList', userList);
-                $scope.activities = activityList;
-            });
-        });
+        $scope.main.title = 'Dance';
 
         $scope.main.cellClass = "unselected"
         $scope.main.selectCells = function(){
@@ -39,7 +20,6 @@ cs142App.controller('DanceCollabController', ['$scope', '$rootScope','$resource'
             console.log("end x", event.pageX);
             console.log("end y", event.pageY);
         }
-=======
     /*var audio = document.getElementById('myAudio');
     var audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     var analyser = audioCtx.createAnalyser();
@@ -114,7 +94,6 @@ $scope.$on('$viewContentLoaded', function() {
         };
         draw();
 });
->>>>>>> e48c3e38aff1432b5a16971ef1433db3a2e9b160
 
 }]);
 

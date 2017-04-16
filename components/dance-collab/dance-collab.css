@@ -1,3 +1,7 @@
+.wave {
+	margin-left: 50px;
+}
+
 h2 {
 	margin: 10px;
 }
@@ -22,11 +26,15 @@ h2 {
 	margin-right: 10px;
 	border-radius: 8px;
 }
+
 table {
 	margin-left: 50px;
 }
 
 .slider{
+
+  margin-left: 50px;
+  margin-bottom: 30px;
   width: 500px;
   height: 30px;
   text-align: center;
@@ -51,8 +59,8 @@ table {
 }
 
 .box {
-	height: 30px;
-	width: 150px;
+  height: 30px;
+  width: 150px;
   text-align: center;
   vertical-align: middle;
   background-color: #DD3030;
@@ -69,6 +77,6 @@ table {
 	height: 400px;
 	background-color: black;
 	margin-left: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 
 }
