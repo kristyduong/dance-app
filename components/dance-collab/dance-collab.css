@@ -3,14 +3,22 @@
 	/*border: solid black 1px;*/
 }
 
-h2 {
-	margin: 10px;
+.flex-horiz {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.refresh {
-	margin: 10px;
+.flex-vert {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
+#open-studio {
+  width: 600px;
+  margin-left: 100px;
+}
 .activity {
 	display: flex;
 	margin: 10px;
