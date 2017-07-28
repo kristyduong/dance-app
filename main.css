@@ -1,0 +1,47 @@
+/*
+CSS for the CS142 project #5 main page
+
+Since CSS uses a global name space for classes we should use class names starting with
+cs142-main- here.
+*/
+
+.md-button {
+	font-family: Arial;
+	text-transform: none;
+	color: lightgray;
+	height: 15px;
+	margin: 14px;
+}
+
+.cs142-main-usernames {
+	text-decoration: none;
+	color: gray;
+}
+
+.cs142-main-usernames:hover {
+	color: blue;
+	cursor: pointer;
+}
+
+md-checkbox {
+	margin: 20px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+md-checkbox.box-property .md-icon {
+	border-color: white;
+}
+
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+	background-color: black;
+}
+
+md-sidenav {
+	width: 15%;
+}
+
+.cs142-main-name {
+	margin: 25px;
+	font-size: 14px;
+}
